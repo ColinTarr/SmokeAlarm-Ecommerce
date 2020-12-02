@@ -1,0 +1,289 @@
+        /* CSS Document */
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        }
+        /*NAV BAR*/
+        
+        li:hover {
+            background-color: #996c32;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        #active {
+            background-color: #996c32;
+        }
+        /*REST OF STYLE*/
+        /*JUMBOTRON*/
+        
+        .jumbotron {
+            display: grid;
+            grid-template-columns: 20px 105px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: black;
+            height: 200px;
+            text-align: left;
+            padding-top: 0px;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../Images/Smoke/JumbotronBanner.jpg);
+        }
+        
+        .titlelogo {
+            padding-top: 17px;
+            float: left;
+            height: 117px;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+        }
+        
+        #title {
+            text-align: center;
+            color: white;
+            text-align: left;
+            font-size: 100px;
+            font-family: 'Cinzel Decorative', serif;
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row-start: 2;
+        }
+        /*FOOTER*/
+        
+        .mainFooter {
+            display: grid;
+            gap: 0px;
+            grid-template-columns: auto 200px 100px 100px 100px 100px 300px auto;
+            grid-template-rows: 50px auto 100px 50px;
+            background-color: #333333;
+            color: white;
+            height: 450px;
+            padding-top: 15px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+        }
+        
+        .company {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 2;
+        }
+        
+        .support {
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 2;
+        }
+        
+        .product {
+            grid-column-start: 5;
+            grid-column-end: 5;
+            grid-row-start: 2;
+        }
+        
+        .smoke {
+            grid-column-start: 7;
+            grid-column-end: 7;
+            grid-row-start: 2;
+        }
+        
+        .tag {
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 4;
+            text-align: center;
+        }
+        
+        .form-control__button {
+            background-color: #333333 !important;
+        }
+        
+        .form-control__button:hover {
+            background-color: #996c32 !important;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .tname {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        .fullcontainer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            margin: 15px;
+        }
+        
+        #teamimage {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .containertitle {
+            background-color: #f2f2f2;
+            text-align: center;
+            float: left;
+            margin-left: 15px;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        @media only screen and (max-width: 720px) {
+            .jumbotron {
+                display: grid;
+                grid-template-columns: 105px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                background-color: black;
+                height: 175px;
+                text-align: left;
+                padding-top: 0px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../Images/Smoke/JumbotronBanner.jpg);
+            }
+            .title {
+                text-align: center;
+                color: white;
+                text-align: left;
+                font-size: 70px !important;
+                font-family: 'Cinzel Decorative', serif;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                grid-row-start: 2;
+            }
+            .titlelogo {
+                padding-top: 0px;
+                float: left;
+                height: 100px;
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+            }
+            .mainFooter {
+                display: grid;
+                align-self: center;
+                gap: 0px;
+                grid-template-columns: auto 100px 100px 100px 75px 250px auto;
+                grid-template-rows: 50px auto 100px;
+                background-color: #333333;
+                color: white;
+                height: 450px;
+                padding-top: 15px;
+                padding-left: 0px;
+                padding-bottom: 0px;
+            }
+            .company {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 2;
+            }
+            .support {
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 2;
+            }
+            .product {
+                grid-column-start: 4;
+                grid-column-end: 4;
+                grid-row-start: 2;
+            }
+            .smoke {
+                grid-column-start: 6;
+                grid-column-end: 6;
+                grid-row-start: 2;
+            }
+            .tag {
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 3;
+                text-align: center;
+            }
+        }
+        
+        .checked {
+            color: orange;
+        }

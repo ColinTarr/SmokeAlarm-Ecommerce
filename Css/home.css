@@ -1,0 +1,93 @@
+body {
+    background-image: url(../Images/Smoke/HomeBackground.jpg);
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 200px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px 155px 1fr 1fr 1fr;
+    height: auto;
+}
+
+#title {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+}
+
+.button {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+
+button {
+    float: center;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 0px;
+    width: 200px;
+    height: 150px;
+    outline: none;
+}
+
+button:active {
+    width: 190px;
+    height: 140px;
+}
+
+#buttontext {
+    font-size: 20px;
+    color: white;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+#title {
+    color: white;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 80px;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        background-image: url(../Images/Smoke/MobileHomeBackground.jpg);
+        background-color: black;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 175px 100px 1fr;
+        height: auto;
+    }
+    #title {
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    }
+    #title {
+        color: white;
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 80px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .button {
+        grid-column-start: 6;
+        grid-column-end: 6;
+        grid-row-start: 4;
+    }
+    button {
+        float: center;
+        background: transparent;
+        border-radius: 25px;
+        border: 2px solid white;
+        padding: 0px;
+        width: 200px;
+        height: 150px;
+        outline: none;
+    }
+}
